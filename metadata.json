@@ -1,0 +1,6 @@
+{
+  "name": "TruthLens AI",
+  "description": "Premium forensic AI platform to analyze uploaded images, detect modifications/filters/generations, and reconstruct the authentic original visual appearance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
