@@ -14,6 +14,9 @@ export interface HeatmapPoint {
 }
 
 export interface ForensicReport {
+  isFallback?: boolean;
+  fallbackReason?: 'missing_api_key' | 'congested';
+  fallbackDetails?: string;
   isAIGeneratedPercentage: number;
   manipulationScore: number;
   filterScore: number;

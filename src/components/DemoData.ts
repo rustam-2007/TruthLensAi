@@ -15,7 +15,7 @@ export const DEMO_FILES: DemoImage[] = [
     id: "ai-avatar",
     name: "AI Generated Profile Portrait",
     category: "AI Generation",
-    imageUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop",
     originalUrl: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop",
     description: "Generative synthesis detection with background symmetry noise anomalies and localized pixel blurs.",
     report: {
@@ -74,7 +74,7 @@ export const DEMO_FILES: DemoImage[] = [
     name: "Manipulated Press Presentation",
     category: "Spliced Composite",
     imageUrl: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=600&auto=format&fit=crop",
-    originalUrl: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=600&auto=format&fit=crop",
+    originalUrl: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=600&auto=format&fit=crop",
     description: "Spliced high-rise element overlays and cloned foreground crowd to mock higher event attendance.",
     report: {
       isAIGeneratedPercentage: 12,

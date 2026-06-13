@@ -64,3 +64,41 @@
   background: rgba(0, 229, 255, 0.3);
 }
 
+@keyframes laser-scan {
+  0% {
+    top: 0%;
+  }
+  50% {
+    top: 100%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+.laser-scan-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.8), transparent);
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.8);
+  animation: laser-scan 4s linear infinite;
+}
+
+@keyframes laser-grid {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 0px 40px;
+  }
+}
+
+.cyber-grid-overlay {
+  background-image: linear-gradient(rgba(0, 229, 255, 0.05) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(0, 229, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: laser-grid 12s linear infinite;
+}
+

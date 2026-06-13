@@ -153,9 +153,9 @@ export default function HomePage({ setCurrentPage, setSelectedDemo, theme }: Hom
                   style={{ clipPath: `polygon(${sliderPosition}% 0, 100% 0, 100% 100%, ${sliderPosition}% 100%)` }}
                 >
                   <img 
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop" 
+                    src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop" 
                     alt="Synthesized AI Face"
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover saturate-[1.75] hue-rotate-[300deg] contrast-[1.1] brightness-[1.05]"
                     style={{ width: "100%", height: "100%" }}
                   />
                 </div>
