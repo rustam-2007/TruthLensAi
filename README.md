@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="assets/truthlens_banner.jpg" width="100%" alt="TruthLens AI Banner" style="border-radius: 8px;" />
 
   # 👁️ TruthLens AI – Advanced Forensic Visual Terminal
   
