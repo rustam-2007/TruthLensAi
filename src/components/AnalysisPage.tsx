@@ -741,7 +741,7 @@ export default function AnalysisPage({ selectedDemo, setSelectedDemo, theme }: A
                   id="relative-image-stage" 
                   className={`relative w-full mx-auto select-none overflow-hidden rounded-lg transition-all duration-300 ${
                     compareMode === "side-by-side" && status === "success" && report
-                      ? "max-w-4xl aspect-[16/9] bg-slate-950/90 p-3 border border-slate-800" 
+                      ? "max-w-4xl aspect-auto md:aspect-[16/9] min-h-[440px] md:min-h-0 bg-slate-950/90 p-3 border border-slate-800" 
                       : "max-w-md aspect-square bg-slate-950"
                   } shadow-inner`}
                 >
@@ -944,9 +944,9 @@ export default function AnalysisPage({ selectedDemo, setSelectedDemo, theme }: A
 
                       {/* 4. SIDE-BY-SIDE DOUBLE PANELS */}
                       {compareMode === "side-by-side" && (
-                        <div className="grid grid-cols-2 gap-3 h-full w-full p-0.5">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 h-full w-full p-0.5 min-h-[420px] md:min-h-0">
                           {/* LEFT DUAL PANEL: ORIGINAL (Aisiz) */}
-                          <div className="relative h-full w-full rounded-md overflow-hidden border border-slate-800 bg-black/50 flex items-center justify-center">
+                          <div className="relative h-full w-full min-h-[200px] md:min-h-0 rounded-md overflow-hidden border border-slate-800 bg-black/50 flex items-center justify-center">
                             <img 
                               src={selectedDemo ? selectedDemo.originalUrl : uploadedBase64} 
                               alt="Raw original photo comparison"
@@ -958,7 +958,7 @@ export default function AnalysisPage({ selectedDemo, setSelectedDemo, theme }: A
                           </div>
 
                           {/* RIGHT DUAL PANEL: AI RADAR SPECIAL */}
-                          <div className="relative h-full w-full rounded-md overflow-hidden border border-cyan-950 bg-black/50 flex items-center justify-center">
+                          <div className="relative h-full w-full min-h-[200px] md:min-h-0 rounded-md overflow-hidden border border-cyan-950 bg-black/50 flex items-center justify-center">
                             {/* Ambient magenta/neon glowing backdrop behind or over the AI view for Demo 1 (not in original mode) */}
                             {!isNaturalPhotoSelected && compareMode !== "original" && selectedDemo?.id === "ai-avatar" && (
                               <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 via-pink-500/5 to-purple-600/15 pointer-events-none z-10 rounded-lg animate-pulse duration-[6s]" />

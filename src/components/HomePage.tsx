@@ -114,7 +114,7 @@ export default function HomePage({ setCurrentPage, setSelectedDemo, theme }: Hom
             </motion.div>
 
             {/* Micro value badges */}
-            <div className={`pt-6 border-t ${theme === "dark" ? "border-slate-800" : "border-slate-200"} grid grid-cols-3 gap-4 font-mono text-xs text-left`}>
+            <div className={`pt-6 border-t ${theme === "dark" ? "border-slate-800" : "border-slate-200"} grid grid-cols-1 sm:grid-cols-3 gap-4 font-mono text-xs text-left`}>
               <div>
                 <span className={`block font-bold text-lg font-display ${theme === "dark" ? "text-slate-50" : "text-slate-900"}`}>&lt; 2.4s</span>
                 <span className={theme === "dark" ? "text-slate-500" : "text-slate-500"}>Spectral Scan Latency</span>
@@ -307,10 +307,10 @@ export default function HomePage({ setCurrentPage, setSelectedDemo, theme }: Hom
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             
             {/* Bento Block 1: AI Generated Flagging */}
-            <div className={`p-6 rounded-2xl border ${theme === "dark" ? "bg-slate-900/40 border-slate-800" : "bg-white border-slate-200"} md:col-span-2 text-left space-y-4 shadow-sm`}>
+            <div className={`p-6 rounded-2xl border ${theme === "dark" ? "bg-slate-900/40 border-slate-800" : "bg-white border-slate-200"} md:col-span-2 lg:col-span-2 text-left space-y-4 shadow-sm`}>
               <div className="p-3 bg-[#00E5FF]/10 text-[#00E5FF] rounded-lg w-fit">
                 <Cpu className="w-5 h-5" />
               </div>
@@ -325,7 +325,7 @@ export default function HomePage({ setCurrentPage, setSelectedDemo, theme }: Hom
             </div>
 
             {/* Bento Block 2: Manipulation Isolation */}
-            <div className={`p-6 rounded-2xl border ${theme === "dark" ? "bg-slate-900/40 border-slate-800" : "bg-white border-slate-200"} text-left space-y-4 shadow-sm`}>
+            <div className={`p-6 rounded-2xl border ${theme === "dark" ? "bg-slate-900/40 border-slate-800" : "bg-white border-slate-200"} text-left space-y-4 shadow-sm pb-8`}>
               <div className="p-3 bg-purple-500/10 text-purple-400 rounded-lg w-fit">
                 <BarChart3 className="w-5 h-5" />
               </div>
@@ -358,7 +358,7 @@ export default function HomePage({ setCurrentPage, setSelectedDemo, theme }: Hom
             </div>
 
             {/* Bento Block 5: Metadata Diagnostics */}
-            <div className={`p-6 rounded-2xl border ${theme === "dark" ? "bg-slate-900/40 border-slate-800" : "bg-white border-slate-200"} md:col-span-3 text-left space-y-4 shadow-sm`}>
+            <div className={`p-6 rounded-2xl border ${theme === "dark" ? "bg-slate-900/40 border-slate-800" : "bg-white border-slate-200"} md:col-span-2 lg:col-span-3 text-left space-y-4 shadow-sm`}>
               <div className="p-3 bg-emerald-500/10 text-emerald-400 rounded-lg w-fit">
                 <Database className="w-5 h-5" />
               </div>
